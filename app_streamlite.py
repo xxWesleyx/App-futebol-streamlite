@@ -7,8 +7,8 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
 # Configurações API (substitua pelas suas chaves!)
-FOOTBALL_API_KEY = st.secrets["FOOTBALL_API_KEY"] if "FOOTBALL_API_KEY" in st.secrets else "SUA_CHAVE_AQUI"  # Use st.secrets para hospedar
-ODDS_API_KEY = st.secrets["ODDS_API_KEY"] if "ODDS_API_KEY" in st.secrets else "SUA_CHAVE_AQUI"
+FOOTBALL_API_KEY = st.secrets.get("FOOTBALL_API_KEY")  # Use st.secrets para hospedar
+ODDS_API_KEY = st.secret.get("ODDS_API_KEY")
 LEAGUE_ID = 71
 
 HEADERS_FOOTBALL = {'X-RapidAPI-Key': FOOTBALL_API_KEY, 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'}
