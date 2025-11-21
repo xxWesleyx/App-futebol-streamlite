@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 # Configurações API (substitua pelas suas chaves!)
 FOOTBALL_API_KEY = st.secrets.get("FOOTBALL_API_KEY")  # Use st.secrets para hospedar
-ODDS_API_KEY = st.secret.get("ODDS_API_KEY")
+ODDS_API_KEY = st.secret.get("ODDS_API_KEY") # Use st.secrets para hospedar
 LEAGUE_ID = 71
 
 HEADERS_FOOTBALL = {'X-RapidAPI-Key': FOOTBALL_API_KEY, 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'}
